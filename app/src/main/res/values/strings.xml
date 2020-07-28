@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Генератор фраз</string>
+    <string name="theory">Теория</string>
+    <string name="phrase_generator">Генератор фраз</string>
+    <string name="generate_button">Генерировать</string>
+    <string name="level_up_button">Следующий уровень</string>
+    <string name="level_down_button">Предыдущий уровень</string>
+    <string name="copy">Копировать</string>
+    <string name="report_an_error">Сообщить об ошибке</string>
+    <string name="level">Уровень: </string>
+    <string name="beginner_level">начинающий</string>
+</resources>
