@@ -16,6 +16,11 @@ import com.skynet.phrasegenerator.generators.Generator;
 import com.skynet.phrasegenerator.generators.Generatorlevel;
 import com.skynet.phrasegenerator.words.WordsStore;
 
+import javax.inject.Inject;
+
+import dagger.hilt.android.AndroidEntryPoint;
+
+@AndroidEntryPoint
 public class MainActivity extends AppCompatActivity {
 
     Button generateButton;
@@ -26,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView logicPhrase;
 
+    @Inject
     Factory factory;
 
     Generator generator;
@@ -47,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
 
         logicPhrase = (TextView) findViewById(R.id.logic_phrase);
 
-        factory = new Factory();
         generator = factory.createGenerator(new Generatorlevel.First(), wordsStore);
 
         generateButton.setOnClickListener(view -> logicPhrase.setText(factory.createGenerator(generatorlevel, wordsStore).generatePhrase()));
