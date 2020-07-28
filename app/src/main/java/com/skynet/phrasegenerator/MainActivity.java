@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
     @Inject
     Factory factory;
 
+    @Inject
+    WordReaderImpl wordReader;
+
     Generator generator;
 
     Generatorlevel generatorlevel;
@@ -43,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        WordsStore wordsStore = new WordReaderImpl().readAll(this);
+        WordsStore wordsStore = wordReader.readAll(this);
 
         generateButton = (Button) findViewById(R.id.generate_button);
         levelUpButton = (Button) findViewById(R.id.level_up_button);

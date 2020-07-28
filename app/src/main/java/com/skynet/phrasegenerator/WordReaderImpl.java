@@ -19,7 +19,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.inject.Inject;
+
 public class WordReaderImpl implements WordReader {
+
+
+    @Inject
+    public WordReaderImpl() {
+    }
+
     @Override
     public WordsStore readAll(Context context) {
         WordsStore wordsStore = new WordsStore();
