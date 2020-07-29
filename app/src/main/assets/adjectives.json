@@ -23,5 +23,31 @@
     "singular": "березовый",
     "plural": "березовые",
     "instrumental": "березовыми"
+  },
+  {
+    "singular": "ветряной",
+    "plural": "ветряные",
+    "instrumental": "ветряными"
+  },
+  {
+    "singular": "городской",
+    "plural": "городские",
+    "instrumental": "городскими"
+  },
+
+  {
+    "singular": "домашний",
+    "plural": "домашние",
+    "instrumental": "домашними"
+  },
+  {
+    "singular": "еловый",
+    "plural": "еловые",
+    "instrumental": "еловыми"
+  },
+  {
+    "singular": "жизненный",
+    "plural": "жизненные",
+    "instrumental": "жизненными"
   }
 ]

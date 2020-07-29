@@ -18,5 +18,25 @@
   {
     "singular": "знает",
     "plural": "знают"
+  },
+  {
+    "singular": "играет",
+    "plural": "играют"
+  },
+  {
+    "singular": "кладет",
+    "plural": "кладут"
+  },
+  {
+    "singular": "ломает",
+    "plural": "ломают"
+  },
+  {
+    "singular": "моет",
+    "plural": "моют"
+  },
+  {
+    "singular": "несет",
+    "plural": "несут"
   }
 ]

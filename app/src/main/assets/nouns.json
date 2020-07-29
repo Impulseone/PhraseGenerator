@@ -23,5 +23,32 @@
     "singular": "береза",
     "plural": "березы",
     "genitive": "берез"
+  },
+  {
+    "singular": "ветер",
+    "plural": "ветра",
+    "genitive": "ветров"
+  },
+  {
+    "singular": "город",
+    "plural": "города",
+    "genitive": "городов"
+  },
+
+  {
+    "singular": "дом",
+    "plural": "дома",
+    "genitive": "домов"
+  },
+  {
+    "singular": "ель",
+    "plural": "ели",
+    "genitive": "елей"
+  },
+  {
+    "singular": "жизнь",
+    "plural": "жизни",
+    "genitive": "жизней"
   }
+
 ]
