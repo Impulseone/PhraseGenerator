@@ -58,5 +58,35 @@
     "singularFemale": "жизненная",
     "plural": "жизненные",
     "instrumental": "жизненными"
+  },
+  {
+    "singularMale": "загадочный",
+    "singularFemale": "загадочная",
+    "plural": "загадочные",
+    "instrumental": "загадочными"
+  },
+  {
+    "singularMale": "индючный",
+    "singularFemale": "индючная",
+    "plural": "индючные",
+    "instrumental": "индючными"
+  },
+  {
+    "singularMale": "кирпичный",
+    "singularFemale": "кирпичная",
+    "plural": "кирпичные",
+    "instrumental": "кирпичными"
+  },
+  {
+    "singularMale": "леечный",
+    "singularFemale": "леечная",
+    "plural": "леечные",
+    "instrumental": "леечными"
+  },
+  {
+    "singularMale": "мостовой",
+    "singularFemale": "мостовая",
+    "plural": "мостовые",
+    "instrumental": "мостовыми"
   }
 ]

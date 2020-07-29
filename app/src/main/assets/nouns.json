@@ -58,5 +58,35 @@
     "plural": "жизни",
     "genitive": "жизней",
     "gender": "ж"
+  },
+  {
+    "singular": "загадка",
+    "plural": "загадки",
+    "genitive": "загадок",
+    "gender": "ж"
+  },
+  {
+    "singular": "индюк",
+    "plural": "индюки",
+    "genitive": "индюков",
+    "gender": "м"
+  },
+  {
+    "singular": "кирпич",
+    "plural": "кирпичи",
+    "genitive": "кирпичей",
+    "gender": "м"
+  },
+  {
+    "singular": "лейка",
+    "plural": "лейки",
+    "genitive": "леек",
+    "gender": "ж"
+  },
+  {
+    "singular": "мост",
+    "plural": "мосты",
+    "genitive": "мостов",
+    "gender": "м"
   }
 ]
