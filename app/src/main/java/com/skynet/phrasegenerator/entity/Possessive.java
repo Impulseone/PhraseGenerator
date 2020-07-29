@@ -1,10 +1,10 @@
-package com.skynet.phrasegenerator.words;
+package com.skynet.phrasegenerator.entity;
 
-public class Verb {
+public class Possessive {
     private String singular;
     private String plural;
 
-    public Verb(String singular, String plural) {
+    public Possessive(String singular, String plural) {
         this.singular = singular;
         this.plural = plural;
     }

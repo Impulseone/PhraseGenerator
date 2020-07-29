@@ -1,52 +1,61 @@
 [
   {
-    "singular": "арбузный",
+    "singularMale": "арбузный",
+    "singularFemale": "арбузная",
     "plural": "арбузные",
     "instrumental": "арбузными"
   },
   {
-    "singular": "арочный",
+    "singularMale": "арочный",
+    "singularFemale": "арочная",
     "plural": "арочные",
     "instrumental": "арочными"
   },
   {
-    "singular": "абрикосовый",
+    "singularMale": "абрикосовый",
+    "singularFemale": "абрикосовая",
     "plural": "абрикосовые",
     "instrumental": "абрикосовыми"
   },
   {
-    "singular": "баклажановый",
+    "singularMale": "баклажановый",
+    "singularFemale": "баклажановая",
     "plural": "баклажановые",
     "instrumental": "баклажановыми"
   },
   {
-    "singular": "березовый",
+    "singularMale": "березовый",
+    "singularFemale": "березовая",
     "plural": "березовые",
     "instrumental": "березовыми"
   },
   {
-    "singular": "ветряной",
+    "singularMale": "ветряной",
+    "singularFemale": "ветряная",
     "plural": "ветряные",
     "instrumental": "ветряными"
   },
   {
-    "singular": "городской",
+    "singularMale": "городской",
+    "singularFemale": "городская",
     "plural": "городские",
     "instrumental": "городскими"
   },
-
   {
-    "singular": "домашний",
+    "singularMale": "домашний",
+    "singularFemale": "домашняя",
     "plural": "домашние",
     "instrumental": "домашними"
   },
   {
-    "singular": "еловый",
+    "singularMale": "еловый",
+    "singularFemale": "еловая",
     "plural": "еловые",
     "instrumental": "еловыми"
   },
   {
-    "singular": "жизненный",
+    "singularMale": "жизненный",
+    "singularFemale": "жизненная",
     "plural": "жизненные",
     "instrumental": "жизненными"
   }

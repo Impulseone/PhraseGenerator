@@ -2,53 +2,61 @@
   {
     "singular": "арбуз",
     "plural": "арбузы",
-    "genitive": "арбузов"
+    "genitive": "арбузов",
+    "gender": "м"
   },
   {
     "singular": "арка",
     "plural": "арки",
-    "genitive": "арок"
+    "genitive": "арок",
+    "gender": "ж"
   },
   {
     "singular": "абрикос",
     "plural": "абрикосы",
-    "genitive": "абрикосов"
+    "genitive": "абрикосов",
+    "gender": "м"
   },
   {
     "singular": "баклажан",
     "plural": "баклажаны",
-    "genitive": "баклажанов"
+    "genitive": "баклажанов",
+    "gender": "м"
   },
   {
     "singular": "береза",
     "plural": "березы",
-    "genitive": "берез"
+    "genitive": "берез",
+    "gender": "ж"
   },
   {
     "singular": "ветер",
     "plural": "ветра",
-    "genitive": "ветров"
+    "genitive": "ветров",
+    "gender": "м"
   },
   {
     "singular": "город",
     "plural": "города",
-    "genitive": "городов"
+    "genitive": "городов",
+    "gender": "м"
   },
-
   {
     "singular": "дом",
     "plural": "дома",
-    "genitive": "домов"
+    "genitive": "домов",
+    "gender": "м"
   },
   {
     "singular": "ель",
     "plural": "ели",
-    "genitive": "елей"
+    "genitive": "елей",
+    "gender": "ж"
   },
   {
     "singular": "жизнь",
     "plural": "жизни",
-    "genitive": "жизней"
+    "genitive": "жизней",
+    "gender": "ж"
   }
-
 ]

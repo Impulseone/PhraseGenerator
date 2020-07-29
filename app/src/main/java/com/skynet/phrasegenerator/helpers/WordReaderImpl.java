@@ -1,12 +1,11 @@
-package com.skynet.phrasegenerator;
+package com.skynet.phrasegenerator.helpers;
 
 import android.content.Context;
 
-import com.skynet.phrasegenerator.words.Adjective;
-import com.skynet.phrasegenerator.words.Noun;
-import com.skynet.phrasegenerator.words.Possessive;
-import com.skynet.phrasegenerator.words.Verb;
-import com.skynet.phrasegenerator.words.WordsStore;
+import com.skynet.phrasegenerator.entity.Adjective;
+import com.skynet.phrasegenerator.entity.Noun;
+import com.skynet.phrasegenerator.entity.Possessive;
+import com.skynet.phrasegenerator.entity.Verb;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -61,7 +60,7 @@ public class WordReaderImpl implements WordReader {
             JSONArray jsonarray = new JSONArray(br.lines().collect(Collectors.joining()));
             for (int i = 0; i < jsonarray.length(); i++) {
                 JSONObject jsonobject = jsonarray.getJSONObject(i);
-                nouns.add(new Noun(jsonobject.getString("singular"), jsonobject.getString("plural"), jsonobject.getString("genitive")));
+                nouns.add(new Noun(jsonobject.getString("singular"), jsonobject.getString("plural"), jsonobject.getString("genitive"), jsonobject.getString("gender")));
             }
             return nouns;
         } catch (IOException | JSONException ex) {
@@ -77,7 +76,7 @@ public class WordReaderImpl implements WordReader {
             JSONArray jsonarray = new JSONArray(br.lines().collect(Collectors.joining()));
             for (int i = 0; i < jsonarray.length(); i++) {
                 JSONObject jsonobject = jsonarray.getJSONObject(i);
-                adjectives.add(new Adjective(jsonobject.getString("singular"), jsonobject.getString("plural"), jsonobject.getString("instrumental")));
+                adjectives.add(new Adjective(jsonobject.getString("singularMale"), jsonobject.getString("singularFemale"), jsonobject.getString("plural"), jsonobject.getString("instrumental")));
             }
             return adjectives;
         } catch (IOException | JSONException ex) {

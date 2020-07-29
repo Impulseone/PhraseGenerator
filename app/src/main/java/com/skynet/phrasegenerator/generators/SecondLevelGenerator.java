@@ -1,6 +1,6 @@
 package com.skynet.phrasegenerator.generators;
 
-import com.skynet.phrasegenerator.words.WordsStore;
+import com.skynet.phrasegenerator.helpers.WordsStore;
 
 import java.util.Random;
 
@@ -65,8 +65,8 @@ public class SecondLevelGenerator extends Generator {
 
         if (checkEquals(new String[]{adjA, adjB})) return secondFigure();
 
-        String adjC = wordsStore.getAdjectives().get(adjANumber).getSingular();
-        String adjD = wordsStore.getAdjectives().get(adjBNumber).getSingular();
+        String adjC = wordsStore.getAdjectives().get(adjANumber).getSingularMale();
+        String adjD = wordsStore.getAdjectives().get(adjBNumber).getSingularMale();
 
         return "Некоторые " + nounA + " делятся на " + adjA + " и " + adjB + "." + "\n" + toFirstUpperCase(nounB) + " и " + nounC + " обладают свойством " + adjC + " и " + adjD + ".";
     }

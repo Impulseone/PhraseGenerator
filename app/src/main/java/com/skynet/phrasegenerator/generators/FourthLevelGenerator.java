@@ -1,6 +1,6 @@
 package com.skynet.phrasegenerator.generators;
 
-import com.skynet.phrasegenerator.words.WordsStore;
+import com.skynet.phrasegenerator.helpers.WordsStore;
 
 import java.util.Random;
 
@@ -123,9 +123,9 @@ public class FourthLevelGenerator extends Generator {
         if (checkEquals(new String[]{nounA, nounB, nounC})) return firstFigure();
 
         int adjANumber = random.nextInt(wordsStore.getAdjectives().size() - 1);
-        String adjA = wordsStore.getAdjectives().get(adjANumber).getSingular();
-        String adjB = wordsStore.getAdjectives().get(random.nextInt(wordsStore.getAdjectives().size() - 1)).getSingular();
-        String adjC = wordsStore.getAdjectives().get(random.nextInt(wordsStore.getAdjectives().size() - 1)).getSingular();
+        String adjA = wordsStore.getAdjectives().get(adjANumber).getSingularMale();
+        String adjB = wordsStore.getAdjectives().get(random.nextInt(wordsStore.getAdjectives().size() - 1)).getSingularMale();
+        String adjC = wordsStore.getAdjectives().get(random.nextInt(wordsStore.getAdjectives().size() - 1)).getSingularMale();
 
         String adjD = wordsStore.getAdjectives().get(adjANumber).getPlural();
 

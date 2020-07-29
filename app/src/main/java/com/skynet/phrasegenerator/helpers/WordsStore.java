@@ -1,4 +1,9 @@
-package com.skynet.phrasegenerator.words;
+package com.skynet.phrasegenerator.helpers;
+
+import com.skynet.phrasegenerator.entity.Adjective;
+import com.skynet.phrasegenerator.entity.Noun;
+import com.skynet.phrasegenerator.entity.Possessive;
+import com.skynet.phrasegenerator.entity.Verb;
 
 import java.util.List;
 

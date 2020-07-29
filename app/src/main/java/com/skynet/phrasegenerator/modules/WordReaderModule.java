@@ -1,7 +1,7 @@
-package com.skynet.phrasegenerator.words;
+package com.skynet.phrasegenerator.modules;
 
-import com.skynet.phrasegenerator.WordReader;
-import com.skynet.phrasegenerator.WordReaderImpl;
+import com.skynet.phrasegenerator.helpers.WordReader;
+import com.skynet.phrasegenerator.helpers.WordReaderImpl;
 
 import dagger.Binds;
 import dagger.Module;

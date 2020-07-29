@@ -1,4 +1,4 @@
-package com.skynet.phrasegenerator;
+package com.skynet.phrasegenerator.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,10 +11,12 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.skynet.phrasegenerator.R;
 import com.skynet.phrasegenerator.generators.Factory;
 import com.skynet.phrasegenerator.generators.Generator;
 import com.skynet.phrasegenerator.generators.Generatorlevel;
-import com.skynet.phrasegenerator.words.WordsStore;
+import com.skynet.phrasegenerator.helpers.WordReaderImpl;
+import com.skynet.phrasegenerator.helpers.WordsStore;
 
 import javax.inject.Inject;
 

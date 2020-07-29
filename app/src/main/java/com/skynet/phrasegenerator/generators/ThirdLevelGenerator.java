@@ -1,6 +1,6 @@
 package com.skynet.phrasegenerator.generators;
 
-import com.skynet.phrasegenerator.words.WordsStore;
+import com.skynet.phrasegenerator.helpers.WordsStore;
 
 import java.util.Random;
 

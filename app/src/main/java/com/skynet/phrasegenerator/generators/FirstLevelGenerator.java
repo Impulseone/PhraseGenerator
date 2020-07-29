@@ -1,6 +1,6 @@
 package com.skynet.phrasegenerator.generators;
 
-import com.skynet.phrasegenerator.words.WordsStore;
+import com.skynet.phrasegenerator.helpers.WordsStore;
 
 import java.util.Random;
 
@@ -50,7 +50,7 @@ public class FirstLevelGenerator extends Generator {
         // Башмаки не обладают свойством мягкий.
         String nounA = wordsStore.getNouns().get(random.nextInt(wordsStore.getNouns().size() - 1)).getPlural();
         String nounB = wordsStore.getNouns().get(random.nextInt(wordsStore.getNouns().size() - 1)).getPlural();
-        String adjA = wordsStore.getAdjectives().get(random.nextInt(wordsStore.getAdjectives().size() - 1)).getSingular();
+        String adjA = wordsStore.getAdjectives().get(random.nextInt(wordsStore.getAdjectives().size() - 1)).getSingularMale();
         if (checkEquals(new String[]{nounA, nounB})) return secondFigure();
         return "Все " + nounA + " обладают свойством " + adjA + "." + "\n" + toFirstUpperCase(nounB) + " не обладают свойством " + adjA + ".";
     }
@@ -83,16 +83,26 @@ public class FirstLevelGenerator extends Generator {
         String nounC = wordsStore.getNouns().get(random.nextInt(wordsStore.getNouns().size() - 1)).getPlural();
         String nounD = wordsStore.getNouns().get(random.nextInt(wordsStore.getNouns().size() - 1)).getPlural();
         if (checkEquals(new String[]{nounA, nounB, nounC, nounD})) return fifthFigure();
-        return "Все " + nounA + " - это " + nounB + "." + "\n" + toFirstUpperCase(nounC) + " и " + nounD + " - это " + nounA + ".";
+        String variantOne = "Все " + nounA + " - это " + nounB + "." + "\n" + toFirstUpperCase(nounC) + " и " + nounD + " - это " + nounA + ".";
+        String variantTwo = toFirstUpperCase(nounC) + " и " + nounD + " - это " + nounA + "." + "\n" + toFirstUpperCase(nounA) + " - это " + nounB + ".";
+        String[] variants = new String[]{variantOne, variantTwo};
+        return variants[random.nextInt(2)];
     }
 
 
     private String sixthFigure() {
         // Изгибы неправильные.
         // Неправильные предметы служат.
-        String nounA = wordsStore.getNouns().get(random.nextInt(wordsStore.getNouns().size() - 1)).getPlural();
-        String adjA = wordsStore.getAdjectives().get(random.nextInt(wordsStore.getAdjectives().size() - 1)).getPlural();
+        String nounAPlural = wordsStore.getNouns().get(random.nextInt(wordsStore.getNouns().size() - 1)).getPlural();
+        String nounASingular = wordsStore.getNouns().get(random.nextInt(wordsStore.getNouns().size() - 1)).getSingular();
+        String adjAPlural = wordsStore.getAdjectives().get(random.nextInt(wordsStore.getAdjectives().size() - 1)).getPlural();
+        String adjASingular = wordsStore.getAdjectives().get(random.nextInt(wordsStore.getAdjectives().size() - 1)).getSingularMale();
         String verbA = wordsStore.getVerbs().get(random.nextInt(wordsStore.getVerbs().size() - 1)).getPlural();
-        return toFirstUpperCase(nounA) + " " + adjA + "." + "\n" + toFirstUpperCase(adjA) + " предметы " + verbA + ". ";
+        String variantOne = toFirstUpperCase(nounAPlural) + " " + adjAPlural + "." + "\n" + toFirstUpperCase(adjAPlural) + " предметы " + verbA + ". ";
+        String variantTwo = toFirstUpperCase(adjAPlural) + " предметы " + verbA + ". " + "\n" + toFirstUpperCase(nounAPlural) + " " + adjAPlural + ".";
+        String variantThree = toFirstUpperCase(nounASingular) + " " + adjASingular + "." + "\n" + toFirstUpperCase(adjAPlural) + " предметы " + verbA + ". ";
+        String variantFour = toFirstUpperCase(adjAPlural) + " предметы " + verbA + ". " + "\n" + toFirstUpperCase(nounASingular) + " " + adjASingular + ".";
+        String[] variants = new String[]{variantOne, variantTwo, variantThree, variantFour};
+        return variants[random.nextInt(4)];
     }
 }

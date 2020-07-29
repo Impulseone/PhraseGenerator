@@ -1,14 +1,24 @@
-package com.skynet.phrasegenerator.words;
+package com.skynet.phrasegenerator.entity;
 
 public class Noun {
     private String singular;
     private String plural;
     private String genitive;
+    private String gender;
 
-    public Noun(String singular, String plural, String genitive) {
+    public Noun(String singular, String plural, String genitive, String gender) {
         this.singular = singular;
         this.plural = plural;
         this.genitive = genitive;
+        this.gender = gender;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public String getSingular() {

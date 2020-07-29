@@ -1,15 +1,12 @@
-package com.skynet.phrasegenerator.words;
+package com.skynet.phrasegenerator.entity;
 
-public class Adjective {
-
+public class Verb {
     private String singular;
     private String plural;
-    private String instrumental;
 
-    public Adjective(String singular, String plural, String instrumental) {
+    public Verb(String singular, String plural) {
         this.singular = singular;
         this.plural = plural;
-        this.instrumental = instrumental;
     }
 
     public String getSingular() {
@@ -26,13 +23,5 @@ public class Adjective {
 
     public void setPlural(String plural) {
         this.plural = plural;
-    }
-
-    public String getInstrumental() {
-        return instrumental;
-    }
-
-    public void setInstrumental(String instrumental) {
-        this.instrumental = instrumental;
     }
 }
