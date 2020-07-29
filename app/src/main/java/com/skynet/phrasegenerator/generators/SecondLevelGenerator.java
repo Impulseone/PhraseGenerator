@@ -37,8 +37,8 @@ public class SecondLevelGenerator extends Generator {
         //Пускающие объекты сделаны из изголовий.
         //Цапли пускают.
 
-        int possessiveNumber = random.nextInt(wordsStore.getPossessives().size() - 1);
-        String possessiveA = wordsStore.getPossessives().get(possessiveNumber).getPlural();
+        int possessiveNumber = random.nextInt(wordsStore.getVerbs().size() - 1);
+        String possessiveA = wordsStore.getVerbs().get(possessiveNumber).getPossessivePlural();
         String nounA = wordsStore.getNouns().get(random.nextInt(wordsStore.getNouns().size() - 1)).getGenitive();
         String nounB = wordsStore.getNouns().get(random.nextInt(wordsStore.getNouns().size() - 1)).getPlural();
         String verbA = wordsStore.getVerbs().get(possessiveNumber).getPlural();

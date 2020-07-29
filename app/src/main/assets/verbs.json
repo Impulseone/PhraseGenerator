@@ -1,42 +1,72 @@
 [
   {
     "singular": "бегает",
-    "plural": "бегают"
+    "plural": "бегают",
+    "possessiveSingularMale": "бегающий",
+    "possessiveSingularFemale": "бегающая",
+    "possessivePlural": "бегающие"
   },
   {
     "singular": "бережет",
-    "plural": "берегут"
+    "plural": "берегут",
+    "possessiveSingularMale": "берегущий",
+    "possessiveSingularFemale": "берегущая",
+    "possessivePlural": "берегущие"
   },
   {
     "singular": "воюет",
-    "plural": "воюют"
+    "plural": "воюют",
+    "possessiveSingularMale": "воюющий",
+    "possessiveSingularFemale": "воюющая",
+    "possessivePlural": "воюющие"
   },
   {
     "singular": "гоняет",
-    "plural": "гоняют"
+    "plural": "гоняют",
+    "possessiveSingularMale": "гоняющий",
+    "possessiveSingularFemale": "гоняющая",
+    "possessivePlural": "гоняющие"
   },
   {
     "singular": "знает",
-    "plural": "знают"
+    "plural": "знают",
+    "possessiveSingularMale": "знающий",
+    "possessiveSingularFemale": "знающая",
+    "possessivePlural": "знающие"
   },
   {
     "singular": "играет",
-    "plural": "играют"
+    "plural": "играют",
+    "possessiveSingularMale": "играющий",
+    "possessiveSingularFemale": "играющая",
+    "possessivePlural": "играющие"
   },
   {
     "singular": "кладет",
-    "plural": "кладут"
+    "plural": "кладут",
+    "possessiveSingularMale": "кладущий",
+    "possessiveSingularFemale": "кладущая",
+    "possessivePlural": "кладущие"
   },
   {
     "singular": "ломает",
-    "plural": "ломают"
+    "plural": "ломают",
+    "possessiveSingularMale": "ломающий",
+    "possessiveSingularFemale": "ломающая",
+    "possessivePlural": "ломающие"
   },
   {
     "singular": "моет",
-    "plural": "моют"
+    "plural": "моют",
+    "possessiveSingularMale": "моющий",
+    "possessiveSingularFemale": "моющая",
+    "possessivePlural": "моющие"
   },
   {
     "singular": "несет",
-    "plural": "несут"
+    "plural": "несут",
+    "possessiveSingularMale": "несущий",
+    "possessiveSingularFemale": "несущая",
+    "possessivePlural": "несущие"
   }
 ]

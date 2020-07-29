@@ -18,31 +18,15 @@ public class Adjective {
         return singularMale;
     }
 
-    public void setSingularMale(String singularMale) {
-        this.singularMale = singularMale;
-    }
-
     public String getSingularFemale() {
         return singularFemale;
-    }
-
-    public void setSingularFemale(String singularFemale) {
-        this.singularFemale = singularFemale;
     }
 
     public String getPlural() {
         return plural;
     }
 
-    public void setPlural(String plural) {
-        this.plural = plural;
-    }
-
     public String getInstrumental() {
         return instrumental;
-    }
-
-    public void setInstrumental(String instrumental) {
-        this.instrumental = instrumental;
     }
 }

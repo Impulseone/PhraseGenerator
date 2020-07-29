@@ -2,7 +2,6 @@ package com.skynet.phrasegenerator.helpers;
 
 import com.skynet.phrasegenerator.entity.Adjective;
 import com.skynet.phrasegenerator.entity.Noun;
-import com.skynet.phrasegenerator.entity.Possessive;
 import com.skynet.phrasegenerator.entity.Verb;
 
 import java.util.List;
@@ -11,7 +10,6 @@ public class WordsStore {
     private List<Noun> nouns;
     private List<Verb> verbs;
     private List<Adjective> adjectives;
-    private List<Possessive> possessives;
 
     public List<Noun> getNouns() {
         return nouns;
@@ -35,13 +33,5 @@ public class WordsStore {
 
     public void setAdjectives(List<Adjective> adjectives) {
         this.adjectives = adjectives;
-    }
-
-    public List<Possessive> getPossessives() {
-        return possessives;
-    }
-
-    public void setPossessives(List<Possessive> possessives) {
-        this.possessives = possessives;
     }
 }

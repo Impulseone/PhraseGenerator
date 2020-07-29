@@ -4,7 +4,6 @@ import android.content.Context;
 
 import com.skynet.phrasegenerator.entity.Adjective;
 import com.skynet.phrasegenerator.entity.Noun;
-import com.skynet.phrasegenerator.entity.Possessive;
 import com.skynet.phrasegenerator.entity.Verb;
 
 import org.json.JSONArray;
@@ -33,24 +32,7 @@ public class WordReaderImpl implements WordReader {
         wordsStore.setNouns(readNouns(context));
         wordsStore.setAdjectives(readAdjectives(context));
         wordsStore.setVerbs(readVerbs(context));
-        wordsStore.setPossessives(readPossessives(context));
         return wordsStore;
-    }
-
-    private List<Possessive> readPossessives(Context context) {
-        ArrayList<Possessive> possessives = new ArrayList<>();
-        try {
-            BufferedReader br = new BufferedReader(new InputStreamReader(context.getAssets().open("possessives.json")));
-            JSONArray jsonarray = new JSONArray(br.lines().collect(Collectors.joining()));
-            for (int i = 0; i < jsonarray.length(); i++) {
-                JSONObject jsonobject = jsonarray.getJSONObject(i);
-                possessives.add(new Possessive(jsonobject.getString("singular"), jsonobject.getString("plural")));
-            }
-            return possessives;
-        } catch (IOException | JSONException ex) {
-            ex.printStackTrace();
-        }
-        return possessives;
     }
 
     public List<Noun> readNouns(Context context) {
@@ -92,7 +74,7 @@ public class WordReaderImpl implements WordReader {
             JSONArray jsonarray = new JSONArray(br.lines().collect(Collectors.joining()));
             for (int i = 0; i < jsonarray.length(); i++) {
                 JSONObject jsonobject = jsonarray.getJSONObject(i);
-                verbs.add(new Verb(jsonobject.getString("singular"), jsonobject.getString("plural")));
+                verbs.add(new Verb(jsonobject.getString("singular"), jsonobject.getString("plural"), jsonobject.getString("possessiveSingularMale"), jsonobject.getString("possessiveSingularFemale"), jsonobject.getString("possessivePlural")));
             }
             return verbs;
         } catch (IOException | JSONException ex) {
