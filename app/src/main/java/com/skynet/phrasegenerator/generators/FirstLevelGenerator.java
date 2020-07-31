@@ -4,12 +4,9 @@ import com.skynet.phrasegenerator.entity.Adjective;
 import com.skynet.phrasegenerator.entity.Noun;
 import com.skynet.phrasegenerator.helpers.WordsStore;
 
-import java.util.Random;
-
 public class FirstLevelGenerator extends Generator {
 
     private WordsStore wordsStore;
-    private Random random = new Random();
 
     public FirstLevelGenerator(WordsStore wordsStore) {
         this.wordsStore = wordsStore;
@@ -46,7 +43,7 @@ public class FirstLevelGenerator extends Generator {
         String nounB = wordsStore.getNouns().get(random.nextInt(wordsStore.getNouns().size() - 1)).getPlural();
         String nounC = wordsStore.getNouns().get(random.nextInt(wordsStore.getNouns().size() - 1)).getPlural();
         if (checkEquals(new String[]{nounA, nounB, nounC})) return firstFigure();
-        return toFirstUpperCase(nounA) + getRandomUnion() + nounB + "." + "\n" + toFirstUpperCase(nounC) + getRandomUnion() + nounA + ".";
+        return toFirstUpperCase(nounA) + getRandomDemonstrative() + nounB + "." + "\n" + toFirstUpperCase(nounC) + getRandomDemonstrative() + nounA + ".";
     }
 
     private String secondFigure() {
@@ -66,7 +63,7 @@ public class FirstLevelGenerator extends Generator {
         String nounB = wordsStore.getNouns().get(random.nextInt(wordsStore.getNouns().size() - 1)).getPlural();
         String nounC = wordsStore.getNouns().get(random.nextInt(wordsStore.getNouns().size() - 1)).getPlural();
         if (checkEquals(new String[]{nounA, nounB, nounC})) return thirdFigure();
-        return toFirstUpperCase(nounA) + getRandomUnion() + nounB + "." + "\n" + toFirstUpperCase(nounA) + getRandomUnion() + nounC + ".";
+        return toFirstUpperCase(nounA) + getRandomDemonstrative() + nounB + "." + "\n" + toFirstUpperCase(nounA) + getRandomDemonstrative() + nounC + ".";
     }
 
     private String fourthFigure() {
@@ -77,7 +74,7 @@ public class FirstLevelGenerator extends Generator {
         String nounC = wordsStore.getNouns().get(random.nextInt(wordsStore.getNouns().size() - 1)).getPlural();
         if (checkEquals(new String[]{nounA, nounB, nounC})) return fourthFigure();
 
-        return toFirstUpperCase(nounA) + getRandomUnion() + nounB + "." + "\n" + toFirstUpperCase(nounB) + getRandomUnion() + nounC + ".";
+        return toFirstUpperCase(nounA) + getRandomDemonstrative() + nounB + "." + "\n" + toFirstUpperCase(nounB) + getRandomDemonstrative() + nounC + ".";
     }
 
     private String fifthFigure() {
@@ -88,8 +85,8 @@ public class FirstLevelGenerator extends Generator {
         String nounC = wordsStore.getNouns().get(random.nextInt(wordsStore.getNouns().size() - 1)).getPlural();
         String nounD = wordsStore.getNouns().get(random.nextInt(wordsStore.getNouns().size() - 1)).getPlural();
         if (checkEquals(new String[]{nounA, nounB, nounC, nounD})) return fifthFigure();
-        String variantOne = toFirstUpperCase(nounA) + getRandomUnion() + nounB + "." + "\n" + toFirstUpperCase(nounC) + " и " + nounD + getRandomUnion() + nounA + ".";
-        String variantTwo = toFirstUpperCase(nounC) + " и " + nounD + getRandomUnion() + nounA + "." + "\n" + toFirstUpperCase(nounA) + getRandomUnion() + nounB + ".";
+        String variantOne = toFirstUpperCase(nounA) + getRandomDemonstrative() + nounB + "." + "\n" + toFirstUpperCase(nounC) + " и " + nounD + getRandomDemonstrative() + nounA + ".";
+        String variantTwo = toFirstUpperCase(nounC) + " и " + nounD + getRandomDemonstrative() + nounA + "." + "\n" + toFirstUpperCase(nounA) + getRandomDemonstrative() + nounB + ".";
         String[] variants = new String[]{variantOne, variantTwo};
 
         return variants[random.nextInt(2)];

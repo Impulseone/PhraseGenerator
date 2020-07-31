@@ -21,6 +21,13 @@
     "possessivePlural": "воюющие"
   },
   {
+    "singular": "веселится",
+    "plural": "веселятся",
+    "possessiveSingularMale": "веселящийся",
+    "possessiveSingularFemale": "веселящаяся",
+    "possessivePlural": "веселящиеся"
+  },
+  {
     "singular": "гоняет",
     "plural": "гоняют",
     "possessiveSingularMale": "гоняющий",
@@ -68,5 +75,40 @@
     "possessiveSingularMale": "несущий",
     "possessiveSingularFemale": "несущая",
     "possessivePlural": "несущие"
+  },
+  {
+    "singular": "оберегает",
+    "plural": "оберегают",
+    "possessiveSingularMale": "оберегающий",
+    "possessiveSingularFemale": "оберегающая",
+    "possessivePlural": "оберегающие"
+  },
+  {
+    "singular": "просит",
+    "plural": "просят",
+    "possessiveSingularMale": "просящий",
+    "possessiveSingularFemale": "просящая",
+    "possessivePlural": "просящие"
+  },
+  {
+    "singular": "работает",
+    "plural": "работают",
+    "possessiveSingularMale": "работающий",
+    "possessiveSingularFemale": "работающая",
+    "possessivePlural": "работающие"
+  },
+  {
+    "singular": "строит",
+    "plural": "строят",
+    "possessiveSingularMale": "строящий",
+    "possessiveSingularFemale": "строящая",
+    "possessivePlural": "строящие"
+  },
+  {
+    "singular": "творит",
+    "plural": "творят",
+    "possessiveSingularMale": "творящий",
+    "possessiveSingularFemale": "творящая",
+    "possessivePlural": "творящие"
   }
 ]

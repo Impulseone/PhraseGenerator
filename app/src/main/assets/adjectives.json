@@ -36,6 +36,12 @@
     "instrumental": "ветряными"
   },
   {
+    "singularMale": "геройский",
+    "singularFemale": "геройская",
+    "plural": "геройские",
+    "instrumental": "геройскими"
+  },
+  {
     "singularMale": "городской",
     "singularFemale": "городская",
     "plural": "городские",
@@ -66,10 +72,22 @@
     "instrumental": "загадочными"
   },
   {
+    "singularMale": "земельный",
+    "singularFemale": "земельная",
+    "plural": "земельные",
+    "instrumental": "земельными"
+  },
+  {
     "singularMale": "индючный",
     "singularFemale": "индючная",
     "plural": "индючные",
     "instrumental": "индючными"
+  },
+  {
+    "singularMale": "истинный",
+    "singularFemale": "истинная",
+    "plural": "истинные",
+    "instrumental": "истинными"
   },
   {
     "singularMale": "кирпичный",
@@ -88,5 +106,35 @@
     "singularFemale": "мостовая",
     "plural": "мостовые",
     "instrumental": "мостовыми"
+  },
+  {
+    "singularMale": "наступательный",
+    "singularFemale": "наступательная",
+    "plural": "наступательные",
+    "instrumental": "наступательными"
+  },
+  {
+    "singularMale": "нефтяной",
+    "singularFemale": "нефтяная",
+    "plural": "нефтяные",
+    "instrumental": "нефтяными"
+  },
+  {
+    "singularMale": "нешуточный",
+    "singularFemale": "нешуточная",
+    "plural": "нешуточные",
+    "instrumental": "нешуточными"
+  },
+  {
+    "singularMale": "неэффективный",
+    "singularFemale": "неэффективная",
+    "plural": "неэффективные",
+    "instrumental": "неэффективными"
+  },
+  {
+    "singularMale": "ночной",
+    "singularFemale": "ночная",
+    "plural": "ночные",
+    "instrumental": "ночными"
   }
 ]

@@ -30,6 +30,24 @@
     "gender": "ж"
   },
   {
+    "singular": "бор",
+    "plural": "боры",
+    "genitive": "боров",
+    "gender": "м"
+  },
+  {
+    "singular": "бочка",
+    "plural": "бочки",
+    "genitive": "бочек",
+    "gender": "ж"
+  },
+  {
+    "singular": "веревка",
+    "plural": "веревки",
+    "genitive": "веревок",
+    "gender": "ж"
+  },
+  {
     "singular": "ветер",
     "plural": "ветра",
     "genitive": "ветров",
@@ -88,5 +106,35 @@
     "plural": "мосты",
     "genitive": "мостов",
     "gender": "м"
+  },
+  {
+    "singular": "мост",
+    "plural": "мосты",
+    "genitive": "мостов",
+    "gender": "м"
+  },
+  {
+    "singular": "новость",
+    "plural": "новости",
+    "genitive": "новостей",
+    "gender": "ж"
+  },
+  {
+    "singular": "огурец",
+    "plural": "огурцы",
+    "genitive": "огурцов",
+    "gender": "м"
+  },
+  {
+    "singular": "папирус",
+    "plural": "папирусы",
+    "genitive": "папирусов",
+    "gender": "м"
+  },
+  {
+    "singular": "река",
+    "plural": "реки",
+    "genitive": "рек",
+    "gender": "ж"
   }
 ]
