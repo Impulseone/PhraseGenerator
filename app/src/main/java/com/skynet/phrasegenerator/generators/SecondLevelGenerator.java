@@ -36,7 +36,7 @@ public class SecondLevelGenerator extends Generator {
         String nounB = wordsStore.getNouns().get(random.nextInt(wordsStore.getNouns().size() - 1)).getPlural();
         String verbA = wordsStore.getVerbs().get(possessiveNumber).getPlural();
         if (checkEquals(new String[]{nounA, nounB})) return firstFigure();
-        return toFirstUpperCase(possessiveA) + " объекты сделаны из " + nounA + ".\n" + getRandomPronoun() + nounB + " " + verbA + ". ";
+        return toFirstUpperCase(possessiveA) + " объекты сделаны из " + nounA + ".\n" + getRandomPronoun() + nounB + getRandomNegation() + verbA + ". ";
     }
 
     private String secondFigure() {

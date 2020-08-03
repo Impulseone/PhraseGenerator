@@ -21,18 +21,16 @@ import javax.inject.Inject;
 
 public class WordReaderImpl implements WordReader {
 
-
     @Inject
     public WordReaderImpl() {
     }
 
     @Override
-    public WordsStore readAll(Context context) {
+    public void readAll(Context context) {
         WordsStore wordsStore = WordsStore.getInstance();
         wordsStore.setNouns(readNouns(context));
         wordsStore.setAdjectives(readAdjectives(context));
         wordsStore.setVerbs(readVerbs(context));
-        return wordsStore;
     }
 
     public List<Noun> readNouns(Context context) {
@@ -42,7 +40,7 @@ public class WordReaderImpl implements WordReader {
             JSONArray jsonarray = new JSONArray(br.lines().collect(Collectors.joining()));
             for (int i = 0; i < jsonarray.length(); i++) {
                 JSONObject jsonobject = jsonarray.getJSONObject(i);
-                nouns.add(new Noun(jsonobject.getString("singular"), jsonobject.getString("plural"), jsonobject.getString("genitive"), jsonobject.getString("gender")));
+                nouns.add(new Noun(jsonobject.getString("singular"), jsonobject.getString("plural"), jsonobject.getString("genitive"),jsonobject.getString("instrumental"), jsonobject.getString("gender")));
             }
             return nouns;
         } catch (IOException | JSONException ex) {

@@ -3,138 +3,154 @@
     "singular": "арбуз",
     "plural": "арбузы",
     "genitive": "арбузов",
+    "instrumental": "арбузами",
     "gender": "м"
   },
   {
     "singular": "арка",
     "plural": "арки",
     "genitive": "арок",
+    "instrumental": "арками",
     "gender": "ж"
   },
   {
     "singular": "абрикос",
     "plural": "абрикосы",
     "genitive": "абрикосов",
+    "instrumental": "абрикосами",
     "gender": "м"
   },
   {
     "singular": "баклажан",
     "plural": "баклажаны",
     "genitive": "баклажанов",
+    "instrumental": "баклажанами",
     "gender": "м"
   },
   {
     "singular": "береза",
     "plural": "березы",
     "genitive": "берез",
+    "instrumental": "березами",
     "gender": "ж"
   },
   {
     "singular": "бор",
     "plural": "боры",
     "genitive": "боров",
+    "instrumental": "борами",
     "gender": "м"
   },
   {
     "singular": "бочка",
     "plural": "бочки",
     "genitive": "бочек",
+    "instrumental": "бочками",
     "gender": "ж"
   },
   {
     "singular": "веревка",
     "plural": "веревки",
     "genitive": "веревок",
+    "instrumental": "веревками",
     "gender": "ж"
   },
   {
     "singular": "ветер",
     "plural": "ветра",
     "genitive": "ветров",
+    "instrumental": "ветрами",
     "gender": "м"
   },
   {
     "singular": "город",
     "plural": "города",
     "genitive": "городов",
+    "instrumental": "городами",
     "gender": "м"
   },
   {
     "singular": "дом",
     "plural": "дома",
     "genitive": "домов",
+    "instrumental": "домами",
     "gender": "м"
   },
   {
     "singular": "ель",
     "plural": "ели",
     "genitive": "елей",
+    "instrumental": "елями",
     "gender": "ж"
   },
   {
     "singular": "жизнь",
     "plural": "жизни",
     "genitive": "жизней",
+    "instrumental": "жизнями",
     "gender": "ж"
   },
   {
     "singular": "загадка",
     "plural": "загадки",
     "genitive": "загадок",
+    "instrumental": "загадками",
     "gender": "ж"
   },
   {
     "singular": "индюк",
     "plural": "индюки",
     "genitive": "индюков",
+    "instrumental": "индюками",
     "gender": "м"
   },
   {
     "singular": "кирпич",
     "plural": "кирпичи",
     "genitive": "кирпичей",
+    "instrumental": "кирпичами",
     "gender": "м"
   },
   {
     "singular": "лейка",
     "plural": "лейки",
     "genitive": "леек",
+    "instrumental": "лейками",
     "gender": "ж"
   },
   {
     "singular": "мост",
     "plural": "мосты",
     "genitive": "мостов",
-    "gender": "м"
-  },
-  {
-    "singular": "мост",
-    "plural": "мосты",
-    "genitive": "мостов",
+    "instrumental": "мостами",
     "gender": "м"
   },
   {
     "singular": "новость",
     "plural": "новости",
     "genitive": "новостей",
+    "instrumental": "новостями",
     "gender": "ж"
   },
   {
     "singular": "огурец",
     "plural": "огурцы",
     "genitive": "огурцов",
+    "instrumental": "огурцами",
     "gender": "м"
   },
   {
     "singular": "папирус",
     "plural": "папирусы",
     "genitive": "папирусов",
+    "instrumental": "папирусами",
     "gender": "м"
   },
   {
     "singular": "река",
     "plural": "реки",
     "genitive": "рек",
+    "instrumental": "реками",
     "gender": "ж"
   }
 ]

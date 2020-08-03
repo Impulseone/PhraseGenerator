@@ -48,8 +48,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        WordsStore wordsStore = wordReader.readAll(this);
-
         generateButton = (Button) findViewById(R.id.generate_button);
         levelUpButton = (Button) findViewById(R.id.level_up_button);
         levelDownButton = (Button) findViewById(R.id.level_down_button);
@@ -57,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
         reportButton = (Button) findViewById(R.id.report_an_error);
 
         logicPhrase = (TextView) findViewById(R.id.logic_phrase);
+
+        wordReader.readAll(this);
 
         generator = factory.createGenerator(new Generatorlevel.First());
 
@@ -69,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
         reportButton.setOnClickListener(view -> onClickError());
     }
 
-    // сохранение состояния
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         TextView phraseView = (TextView) findViewById(R.id.logic_phrase);
@@ -77,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
     }
 
-    // получение ранее сохраненного состояния
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);

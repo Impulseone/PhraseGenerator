@@ -31,15 +31,15 @@ public abstract class Generator {
     public String getRandomNegation() {
         String negOne = " не ";
         String negTwo = "";
-        String[] unions = new String[]{negOne, negTwo};
-        return unions[random.nextInt(unions.length)];
+        String[] negations = new String[]{negOne, negTwo};
+        return negations[random.nextInt(negations.length)];
     }
 
     public String getRandomParticle() {
-        String unionOne = " только ";
-        String unionTwo = " не ";
-        String[] unions = new String[]{unionOne, unionTwo};
-        return unions[random.nextInt(unions.length)];
+        String particleOne = " только ";
+        String particleTwo = " не ";
+        String[] particles = new String[]{particleOne, particleTwo};
+        return particles[random.nextInt(particles.length)];
     }
 
     public String getRandomDemonstrative() {
