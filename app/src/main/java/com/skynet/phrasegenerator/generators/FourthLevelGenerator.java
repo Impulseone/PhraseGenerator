@@ -5,13 +5,6 @@ import com.skynet.phrasegenerator.helpers.WordsStore;
 import java.util.Random;
 
 public class FourthLevelGenerator extends Generator {
-    private WordsStore wordsStore;
-
-    private Random random = new Random();
-
-    public FourthLevelGenerator(WordsStore wordsStore) {
-        this.wordsStore = wordsStore;
-    }
 
     @Override
     public String generatePhrase() {

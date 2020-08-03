@@ -6,12 +6,6 @@ import com.skynet.phrasegenerator.helpers.WordsStore;
 
 public class FirstLevelGenerator extends Generator {
 
-    private WordsStore wordsStore;
-
-    public FirstLevelGenerator(WordsStore wordsStore) {
-        this.wordsStore = wordsStore;
-    }
-
     @Override
     public String generatePhrase() {
         int k = 1 + random.nextInt(7);

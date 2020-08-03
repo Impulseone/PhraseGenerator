@@ -1,12 +1,16 @@
 package com.skynet.phrasegenerator.generators;
 
+import com.skynet.phrasegenerator.helpers.WordsStore;
+
 import java.util.Random;
 
 public abstract class Generator {
 
+    public WordsStore wordsStore = WordsStore.getInstance();
+
     public Random random = new Random();
 
-    int randomPhraseNumber = 0;
+    public int randomPhraseNumber = 0;
 
     public abstract String generatePhrase();
 

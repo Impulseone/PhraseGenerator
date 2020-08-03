@@ -7,9 +7,22 @@ import com.skynet.phrasegenerator.entity.Verb;
 import java.util.List;
 
 public class WordsStore {
+
+    private static WordsStore wordsStore;
+
     private List<Noun> nouns;
     private List<Verb> verbs;
     private List<Adjective> adjectives;
+
+    public static WordsStore getInstance() {
+        if (wordsStore == null) {
+            wordsStore = new WordsStore();
+        }
+        return wordsStore;
+    }
+
+    private WordsStore() {
+    }
 
     public List<Noun> getNouns() {
         return nouns;

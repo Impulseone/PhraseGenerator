@@ -1,7 +1,5 @@
 package com.skynet.phrasegenerator.generators;
 
-import com.skynet.phrasegenerator.helpers.WordsStore;
-
 import javax.inject.Inject;
 
 public class Factory {
@@ -10,15 +8,15 @@ public class Factory {
     public Factory() {
     }
 
-    public Generator createGenerator(Generatorlevel generatorlevel, WordsStore wordsStore) {
+    public Generator createGenerator(Generatorlevel generatorlevel) {
         if (generatorlevel instanceof Generatorlevel.First)
-            return new FirstLevelGenerator(wordsStore);
+            return new FirstLevelGenerator();
         else if (generatorlevel instanceof Generatorlevel.Second)
-            return new SecondLevelGenerator(wordsStore);
+            return new SecondLevelGenerator();
         else if (generatorlevel instanceof Generatorlevel.Third)
-            return new ThirdLevelGenerator(wordsStore);
+            return new ThirdLevelGenerator();
         else if (generatorlevel instanceof Generatorlevel.Fourth)
-            return new FourthLevelGenerator(wordsStore);
-        else return new FirstLevelGenerator(wordsStore);
+            return new FourthLevelGenerator();
+        else return new FirstLevelGenerator();
     }
 }

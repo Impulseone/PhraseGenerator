@@ -58,9 +58,9 @@ public class MainActivity extends AppCompatActivity {
 
         logicPhrase = (TextView) findViewById(R.id.logic_phrase);
 
-        generator = factory.createGenerator(new Generatorlevel.First(), wordsStore);
+        generator = factory.createGenerator(new Generatorlevel.First());
 
-        generateButton.setOnClickListener(view -> logicPhrase.setText(factory.createGenerator(generatorlevel, wordsStore).generatePhrase()));
+        generateButton.setOnClickListener(view -> logicPhrase.setText(factory.createGenerator(generatorlevel).generatePhrase()));
 
         levelUpButton.setOnClickListener(view -> onClickLevelUp());
 

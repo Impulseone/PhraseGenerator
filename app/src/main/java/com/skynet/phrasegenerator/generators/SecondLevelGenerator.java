@@ -1,15 +1,9 @@
 package com.skynet.phrasegenerator.generators;
 
+import com.skynet.phrasegenerator.generators.Generator;
 import com.skynet.phrasegenerator.helpers.WordsStore;
 
 public class SecondLevelGenerator extends Generator {
-
-    private WordsStore wordsStore;
-
-
-    public SecondLevelGenerator(WordsStore wordsStore) {
-        this.wordsStore = wordsStore;
-    }
 
     @Override
     public String generatePhrase() {

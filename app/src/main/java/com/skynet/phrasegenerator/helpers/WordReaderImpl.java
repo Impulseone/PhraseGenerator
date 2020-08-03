@@ -28,7 +28,7 @@ public class WordReaderImpl implements WordReader {
 
     @Override
     public WordsStore readAll(Context context) {
-        WordsStore wordsStore = new WordsStore();
+        WordsStore wordsStore = WordsStore.getInstance();
         wordsStore.setNouns(readNouns(context));
         wordsStore.setAdjectives(readAdjectives(context));
         wordsStore.setVerbs(readVerbs(context));
